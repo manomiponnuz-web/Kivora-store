@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f3ed">
+<title>Kivora | Everyday Finds</title>
+<style>
+:root{--ink:#2f2925;--muted:#766c64;--cream:#fbf8f4;--sand:#e8d8c7;--rose:#c98e7e;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit}.announcement{background:#342d28;color:#fff;text-align:center;padding:10px 14px;font-size:12px;letter-spacing:.08em}
+header{padding:22px 6vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #eee3d9;background:#fbf8f4;position:sticky;top:0;z-index:5}
+.logo{font-family:Georgia,serif;font-size:30px;letter-spacing:.12em;font-weight:bold}.logo span{display:block;font-family:Arial,sans-serif;font-size:9px;letter-spacing:.28em;text-align:center;margin-top:4px;font-weight:normal}
+nav{display:flex;gap:20px;font-size:13px}nav a{text-decoration:none}
+.hero{margin:24px auto 34px;max-width:1200px;padding:56px 7vw;min-height:300px;background:linear-gradient(110deg,#ead8c8,#f7eee6 55%,#dfc3b4);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.hero-copy{max-width:510px}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:11px;color:#745c4c}.hero h1{font:clamp(38px,6vw,64px)/1.04 Georgia,serif;font-weight:normal;margin:15px 0}.hero p{line-height:1.7;color:#5f5148;max-width:430px;font-size:14px}.button{display:inline-block;background:#342d28;color:#fff;text-decoration:none;padding:14px 19px;font-size:12px;letter-spacing:.06em;border:0;cursor:pointer}.hero-note{font:italic 19px Georgia,serif;border:1px solid #bfa28e;border-radius:50%;width:145px;height:145px;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.5;transform:rotate(8deg);flex-shrink:0}
+.wrap{max-width:1200px;margin:0 auto;padding:0 6vw 50px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin:36px 0 20px}.section-head h2{font:normal 32px Georgia,serif;margin:0}.section-head p{font-size:12px;color:var(--muted);margin:7px 0 0}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 24px}.filter{border:1px solid #d9c9bb;background:transparent;border-radius:30px;padding:9px 14px;font-size:12px;cursor:pointer;color:var(--ink)}.filter.active{background:#342d28;color:#fff;border-color:#342d28}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.product{background:#fff;border:1px solid #eee4db;padding:10px;display:flex;flex-direction:column}.product img{width:100%;aspect-ratio:4/4.6;object-fit:cover;background:#eee3d9}.product h3{font:normal 17px Georgia,serif;margin:13px 0 6px}.product .desc{font-size:12px;line-height:1.5;color:var(--muted);margin:0 0 12px;flex:1}.price{font-size:14px;font-weight:bold;margin-bottom:12px}.order{display:block;text-align:center;text-decoration:none;background:#f0e5da;padding:11px 8px;font-size:11px;letter-spacing:.04em}.order:hover{background:#e4cdbb}
+.note{background:#f1e6dc;padding:22px;margin-top:32px;font-size:13px;line-height:1.7;color:#5d5047}.note strong{color:#302823}
+footer{background:#342d28;color:#f8f3ed;padding:35px 6vw;text-align:center}footer .logo{font-size:24px}footer p{font-size:12px;line-height:1.8;color:#d8c9bd}footer a{color:#fff}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding:38px 6vw}.hero-note{width:105px;height:105px;font-size:14px}nav{gap:12px}}
+@media(max-width:520px){header{padding:16px 5vw}.logo{font-size:24px}nav{font-size:11px;gap:10px}.hero{margin:14px 12px 26px;min-height:0;padding:34px 22px}.hero-note{display:none}.wrap{padding:0 14px 35px}.section-head h2{font-size:28px}.grid{gap:10px}.product{padding:7px}.product h3{font-size:15px}.order{font-size:10px}.announcement{font-size:10px}}
+</style>
+</head>
+<body>
+<div class="announcement">A LITTLE SOMETHING FOR EVERYDAY ✦ WELCOME TO KIVORA</div>
+<header>
+  <a href="#" style="text-decoration:none"><div class="logo">KIVORA<span>EVERYDAY FINDS</span></div></a>
+  <nav><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">Thoughtful finds. Lovely prices.</div>
+    <h1>Your everyday<br>finds, made lovely.</h1>
+    <p>Discover little favourites for your wardrobe, beauty shelf and everyday life. Browse our picks and message us on WhatsApp to order.</p>
+    <a class="button" href="#shop">EXPLORE THE COLLECTION</a>
+  </div>
+  <div class="hero-note">find your<br>little favourite ✦</div>
+</section>
+<main class="wrap" id="shop">
+  <div class="section-head"><div><h2>Shop our picks</h2><p>Replace these sample items with your real products and prices.</p></div></div>
+  <div class="filters" id="filters">
+    <button class="filter active" data-cat="All">All finds</button>
+    <button class="filter" data-cat="Fashion">Fashion</button>
+    <button class="filter" data-cat="Accessories">Accessories</button>
+    <button class="filter" data-cat="Beauty">Beauty</button>
+    <button class="filter" data-cat="Home">Home & lifestyle</button>
+  </div>
+  <div class="grid" id="products"></div>
+  <div class="note" id="about"><strong>A note from Kivora</strong><br>We’re building a collection of useful, pretty and affordable finds. Product availability, delivery charges and delivery time will be confirmed with you on WhatsApp before your order is finalised.</div>
+</main>
+<footer id="contact">
+  <div class="logo">KIVORA</div>
+  <p>EVERYDAY FINDS · A LITTLE JOY IN EVERY ORDER</p>
+  <p>Questions? Use any product’s WhatsApp order button.<br>Instagram: <strong>@yourinstagram</strong> (replace with your handle)</p>
+  <p style="font-size:10px;color:#bba99b">Kivora storefront preview — sample products, prices and Instagram handle must be replaced before launch.</p>
+</footer>
+<script>
+/* IMPORTANT: Replace this with your WhatsApp number including country code, digits only.
+   India example format: 91 followed by your 10-digit number. Do not include + or spaces. */
+const WHATSAPP_NUMBER = "917736915148";
+const products = [
+ {name:"Everyday Kurti",cat:"Fashion",price:"₹399",desc:"An easy everyday style. Replace with your product details.",img:"https://images.unsplash.com/photo-1583391733956-6c78276477e3?auto=format&fit=crop&w=700&q=80"},
+ {name:"Mini Shoulder Bag",cat:"Accessories",price:"₹299",desc:"A little bag for your everyday essentials.",img:"https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80"},
+ {name:"Minimal Earrings",cat:"Accessories",price:"₹149",desc:"A simple finishing touch for your look.",img:"https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80"},
+ {name:"Beauty Essential",cat:"Beauty",price:"₹199",desc:"Add the exact item name and details here.",img:"https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=700&q=80"},
+ {name:"Comfy Home Find",cat:"Home",price:"₹249",desc:"A useful little pick for your space.",img:"https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=700&q=80"},
+ {name:"Daily Wear Top",cat:"Fashion",price:"₹349",desc:"Add available colours and sizes here.",img:"https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=700&q=80"},
+ {name:"Classic Bracelet",cat:"Accessories",price:"₹179",desc:"A versatile accessory for everyday wear.",img:"https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=700&q=80"},
+ {name:"Self-care Pick",cat:"Beauty",price:"₹229",desc:"Replace with the actual product and ingredients if relevant.",img:"https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=700&q=80"}
+];
+function orderLink(p){
+ const message = `Hi Kivora! I'd like to order: ${p.name} (${p.price}). Please confirm availability, delivery charges and delivery time.`;
+ const number = WHATSAPP_NUMBER.replace(/\D/g,"");
+ const href = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+ return number.includes("X") || number.length < 10 ? `https://wa.me/?text=${encodeURIComponent(message+" Please add the store WhatsApp number to complete my order.")}` : href;
+}
+function render(cat="All"){
+ const list=cat==="All"?products:products.filter(p=>p.cat===cat);
+ document.getElementById("products").innerHTML=list.map(p=>`<article class="product"><img loading="lazy" src="${p.img}" alt="${p.name}"><h3>${p.name}</h3><p class="desc">${p.desc}</p><div class="price">${p.price}</div><a class="order" href="${orderLink(p)}" target="_blank" rel="noopener">ORDER ON WHATSAPP ↗</a></article>`).join("");
+}
+document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");render(b.dataset.cat)}));
+render();
+</script>
+</body>
+</html>
